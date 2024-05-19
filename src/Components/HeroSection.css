@@ -1,0 +1,220 @@
+*{
+  overflow-y: hidden; 
+}
+
+.grad {
+  background: linear-gradient(90deg, red, blue);
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grad h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-container {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(b1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+li {
+  list-style: none;
+}
+
+.form-box {
+  border: 1px solid;
+  padding: 2rem;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100vh; /* Adjusted max-width for better responsiveness */
+  height: 65vh;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(#000000, #2d3436);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.332);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+p {
+  margin-bottom: 5px;
+}
+
+.hi::placeholder,
+.helo::placeholder {
+  font-size: 14px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px; /* Adjusted font size */
+  margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.hl {
+  color: #fff;
+}
+
+.separator {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.form-box label {
+  margin-bottom: 15px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.form-box label input {
+  margin-right: 15px;
+}
+
+.hi {
+  height: 20px;
+  font-size: 25px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  color: black;
+}
+
+.helo {
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #3c53e7;
+  outline: none;
+  color: black;
+  margin-top: 20px;
+  transition: border-bottom 0.3s ease;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.helo:hover {
+  border-bottom: 2px solid #03426c;
+}
+
+.form-box input[type="text"] {
+  background: transparent;
+  caret-color: #fff;
+  color: #fff;
+}
+
+.form-box input[type="submit"] {
+  background-color: rgb(255, 218, 192);
+  color: black;
+  padding: 10px 30px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+span {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.form-box input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+  .helo {
+    height: 20px;
+  }
+  .form-box {
+    width: 70vh;
+    height: 60vh;
+  }
+  .grad h2 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    overflow: hidden;
+  }
+  .hero-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px; /* Adjusted font size for better readability */
+  }
+  .form-box {
+    width: 45vh;
+    height: auto; /* Adjusted height to be auto for better responsiveness */
+  }
+  .grad {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .grad h2 {
+    font-size: 20px;
+  }
+
+  .hl {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  body{
+    overflow: hidden;
+  }
+}
